@@ -122,6 +122,22 @@ body {
 }
 .day-bullets li::before { content: '—'; position: absolute; left: 0; }
 
+.day-track-label {
+  font-size: 7px; font-weight: 700; color: #C9A050;
+  text-transform: uppercase; letter-spacing: 1px;
+  margin: 8px 0 2px; display: block;
+}
+.day-bullets li.track {
+  padding-left: 0; margin-bottom: 2px;
+}
+.day-bullets li.track::before { content: none; }
+.day-deliverable {
+  font-size: 9px; color: #1A1A18; line-height: 1.6;
+  text-align: justify; padding: 9px 0 0 0;
+  border-top: 0.5px solid #C9A050; margin-top: 8px;
+  font-style: italic;
+}
+
 /* ── WHAT DAVID ─────────────────────────────────── */
 .what-david {
   background: #15150F;
@@ -195,19 +211,21 @@ body {
 
   <!-- 30/60/90/120 Day Value Plan -->
   <div class="section-label"><div class="bar"></div><span>30 · 60 · 90 · 120 Day Value Plan</span></div>
-  <p class="day-plan-intro">A structured, proven approach to delivering impact from day one — balancing rapid discovery with strategic execution across AI, cloud, governance, and executive alignment.</p>
+  <p class="day-plan-intro">A structured, proven approach to delivering impact from day one — written across four tracks so every hiring executive can see exactly what David delivers in their context: <strong>CIO · CTO / AI Strategy · VP Enterprise Architecture · Digital Transformation</strong>.</p>
 
   <div class="day-block">
     <div class="day-header"><div class="day-label">Day 30</div><div class="day-sub">LISTEN · LEARN · MAP</div></div>
     <div class="day-content">
       <div class="day-section-title">Foundation &amp; Discovery</div>
       <ul class="day-bullets">
-        <li>Conduct structured listening sessions with CxO, business unit leaders, and technology teams to surface pain points, priorities, and undocumented constraints</li>
-        <li>Audit the current technology estate — application portfolio, cloud footprint, data architecture, and governance maturity — building an honest baseline</li>
-        <li>Map AI and GenAI readiness: identify where capability gaps exist and where quick-win integrations are feasible within existing infrastructure</li>
-        <li>Establish trust with key stakeholders and begin positioning enterprise architecture as a <strong>strategic enabler</strong>, not a gating function</li>
-        <li>Deliver a concise executive brief: current state assessment, top risks, and an early hypothesis for where the highest-value work lies</li>
+        <li>Conduct structured listening sessions with CxO, business unit leaders, and technology teams to surface pain points, priorities, and undocumented constraints. Establish trust and begin positioning technology architecture as a <strong>strategic enabler</strong> — not a gating function.</li>
+        <li class="track"><span class="day-track-label">CIO Track</span>Full audit of the IT portfolio — application estate, cloud footprint, vendor contracts, and infrastructure lifecycle. Establish honest TCO baselines and identify where cost recovery is available within 90 days.</li>
+        <li class="track"><span class="day-track-label">CTO / AI Strategy Track</span>GenAI capability assessment: map current AI investments against the product roadmap, identify gaps in data readiness and model governance, and surface the 2–3 use cases with the clearest path to production within the quarter.</li>
+        <li class="track"><span class="day-track-label">VP Enterprise Architecture Track</span>EA governance audit — assess the Architecture Review Board, decision-rights framework, and standards library. Identify where governance is creating friction versus where the absence of governance is creating risk.</li>
+        <li class="track"><span class="day-track-label">Digital Transformation Track</span>Map the transformation backlog against business value and executive sponsorship. Identify what is stalled, why it stalled, and which initiatives have the political and technical momentum to move in the next 60 days.</li>
+        <li class="track"><span class="day-track-label">Individual Contributor / Principal Architect Track</span>Embed directly with the engineering and architecture teams doing the work. Conduct technical deep-dives on the highest-risk systems — cloud architecture, integration patterns, data pipelines, or AI infrastructure — and produce a written technical assessment identifying the three architectural decisions the team needs to make in the next 30 days and the debt that is silently slowing delivery.</li>
       </ul>
+      <p class="day-deliverable">Deliverable: A written "State of the Architecture" brief delivered to the CEO/CIO — documenting findings, top risks, early hypotheses, and a proposed 60-day execution focus.</p>
     </div>
   </div>
 
@@ -216,12 +234,14 @@ body {
     <div class="day-content">
       <div class="day-section-title">Strategic Alignment &amp; Early Wins</div>
       <ul class="day-bullets">
-        <li>Finalize a prioritized transformation roadmap — sequenced by business value, feasibility, and risk — and secure executive alignment before a single dollar is spent</li>
-        <li>Identify and execute 2–3 <strong>high-visibility quick wins</strong>: cloud cost optimizations, governance bottlenecks removed, or a targeted AI pilot that produces visible results</li>
-        <li>Stand up or strengthen the Architecture Review Board and establish lightweight governance guardrails that enable speed without creating sprawl</li>
-        <li>Launch FinOps baseline review: identify top 20% of cloud spend driving 80% of waste and establish corrective action plans</li>
-        <li>Present a board-ready narrative connecting technology investment to business outcomes, revenue protection, and competitive positioning</li>
+        <li>Finalize a prioritized roadmap — sequenced by business value, feasibility, and risk — and secure executive alignment before a single dollar of new investment is committed.</li>
+        <li class="track"><span class="day-track-label">CIO Track</span>Launch FinOps baseline review: identify the top 20% of cloud spend driving 80% of waste. Execute 2–3 application rationalization decisions that generate immediate recurring savings. Stand up or strengthen the ARB with lightweight governance that enables speed without sprawl.</li>
+        <li class="track"><span class="day-track-label">CTO / AI Strategy Track</span>Move the highest-confidence GenAI use case from assessment to pilot. Define the governance guardrails — model risk, data privacy, bias controls — and establish the cross-functional team that will own production delivery.</li>
+        <li class="track"><span class="day-track-label">VP Enterprise Architecture Track</span>Publish the first version of the Enterprise Architecture Standards — cloud, integration, data, and security patterns. Socialize with engineering leads to build ownership, not compliance.</li>
+        <li class="track"><span class="day-track-label">Digital Transformation Track</span>Unlock the stalled initiative with the highest business sponsor urgency. Remove the blocker — whether governance, vendor, resourcing, or architecture — and deliver the first visible progress milestone.</li>
+        <li class="track"><span class="day-track-label">Individual Contributor / Principal Architect Track</span>Own one critical architectural decision end-to-end — cloud platform selection, integration pattern, data architecture, or AI infrastructure design. Deliver a reference architecture and Architecture Decision Record (ADR) the team can build from immediately, with tradeoffs documented and alternatives considered.</li>
       </ul>
+      <p class="day-deliverable">Deliverable: Board-ready narrative connecting technology investment to business outcomes, revenue protection, and competitive positioning — with early wins documented in dollar terms.</p>
     </div>
   </div>
 
@@ -230,12 +250,14 @@ body {
     <div class="day-content">
       <div class="day-section-title">Transformation in Motion</div>
       <ul class="day-bullets">
-        <li>Drive active execution of the highest-priority workstreams — cloud modernization, application rationalization, or GenAI integration — with clear owners and measurable milestones</li>
-        <li>Establish a <strong>Cloud Center of Excellence (CCoE)</strong> with embedded FinOps governance, Communities of Practice, and architectural standards that scale across teams</li>
-        <li>Launch the enterprise AI strategy: defined use cases, data readiness requirements, governance guardrails, and a phased integration plan aligned to business priorities</li>
-        <li>Reduce architecture approval cycle times through Agile-based governance — targeting a 25–30% improvement in decision velocity within the quarter</li>
-        <li>Deliver first measurable ROI milestone — cost savings realized, delivery speed improved, or a production AI capability shipped</li>
+        <li>Highest-priority workstreams are in active execution with clear owners, measurable milestones, and weekly executive visibility. The organization is no longer talking about transformation — it is doing it.</li>
+        <li class="track"><span class="day-track-label">CIO Track</span>Cloud Center of Excellence operational — embedded FinOps governance, Communities of Practice, and architectural standards in place. First wave of application retirements complete with recurring savings flowing to the P&amp;L. IT is visibly running leaner.</li>
+        <li class="track"><span class="day-track-label">CTO / AI Strategy Track</span>First GenAI capability in production — with adoption metrics, feedback loops, and a documented path to the next use case. The AI strategy is no longer a slide deck; it is a shipping product with a roadmap.</li>
+        <li class="track"><span class="day-track-label">VP Enterprise Architecture Track</span>Architecture Review Board operating at cadence — cycle times reduced 25–30% through Agile-based governance. EA is being pulled into decisions proactively, not consulted reactively. The practice has organizational credibility.</li>
+        <li class="track"><span class="day-track-label">Digital Transformation Track</span>Two or more transformation workstreams delivering measurable business outcomes — faster time-to-market, reduced operational cost, or improved customer experience — documented and reported to the board.</li>
+        <li class="track"><span class="day-track-label">Individual Contributor / Principal Architect Track</span>Measurable improvement in delivery velocity, system stability, or platform capability — with David's architectural patterns adopted by the team and producing results independently. Engineers are shipping better, faster, and with more confidence than before Day 1.</li>
       </ul>
+      <p class="day-deliverable">Deliverable: First measurable ROI milestone reported — cost savings realized, delivery velocity improved, or a production AI capability shipped — with a written 90-day retrospective and 120-day scale plan.</p>
     </div>
   </div>
 
@@ -244,12 +266,14 @@ body {
     <div class="day-content">
       <div class="day-section-title">Durable Competitive Advantage</div>
       <ul class="day-bullets">
-        <li>Scale successful pilots into enterprise-wide programs — expanding AI integrations, FinOps disciplines, and modernization patterns across all business units</li>
-        <li>Institutionalize a culture of architectural accountability: governance frameworks, decision rights, and technology standards that operate independently of any single leader</li>
-        <li>Deliver a comprehensive 12-month technology strategy to the board — with defined KPIs, investment rationale, and a clear line-of-sight from technology decisions to EBITDA impact</li>
-        <li><strong>Establish the organization as an AI-ready, cloud-optimized enterprise</strong> — with the governance maturity, talent capability, and architectural foundation to sustain transformation at speed</li>
-        <li>Position technology as a board-level competitive differentiator — not a cost to be managed, but a compounding asset that drives long-term enterprise value</li>
+        <li>Successful patterns are scaling enterprise-wide. Governance frameworks, standards, and cultures of accountability are operating independently of any single leader — they belong to the organization.</li>
+        <li class="track"><span class="day-track-label">CIO Track</span>IT operating model transformed: FinOps disciplines embedded, application portfolio rationalized to a defensible size, and a multi-year technology investment plan presented to the board with clear ROI commitments and defined accountability.</li>
+        <li class="track"><span class="day-track-label">CTO / AI Strategy Track</span>AI integration roadmap spans the full product portfolio — not a single use case but a compounding capability. The organization has the talent pipeline, tooling standards, and governance maturity to sustain AI development at scale without David as a bottleneck.</li>
+        <li class="track"><span class="day-track-label">VP Enterprise Architecture Track</span>EA practice is self-sustaining — architects are embedded in delivery teams, standards are living documents with clear ownership, and the function has moved from gatekeeper to accelerator. Architecture decisions are faster and better than before the practice existed.</li>
+        <li class="track"><span class="day-track-label">Digital Transformation Track</span>Transformation is no longer a program — it is an operating capability. The organization can initiate, govern, and deliver technology-enabled business change without an external catalyst. <strong>That is the exit condition David builds toward from day one.</strong></li>
+        <li class="track"><span class="day-track-label">Individual Contributor / Principal Architect Track</span>The team is building better without David in every meeting. The architectural patterns, decision frameworks, and standards David introduced are running independently — embedded in the team's instincts, not just their documentation. <strong>The best IC contribution is one the team no longer needs help with.</strong></li>
       </ul>
+      <p class="day-deliverable">Deliverable: Comprehensive 12-month technology strategy presented to the board — defined KPIs, investment rationale, talent roadmap, and a clear line-of-sight from every technology decision to EBITDA impact.</p>
     </div>
   </div>
 
